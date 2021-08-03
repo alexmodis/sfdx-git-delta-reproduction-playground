@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOO_Order_Previous_Errors__c</fullName>
+    <description>JSON Used for main free orders</description>
+    <externalId>false</externalId>
+    <label>WOO_Order_Previous_Errors</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

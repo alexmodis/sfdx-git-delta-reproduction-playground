@@ -1,7 +1,13 @@
 # List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
 # More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
 #
+# .forceignore v2
 
+#Azure Devops
+force-app/azurePipeline/*
+force-app/wow/knowledge/settings/Knowledge.settings-meta.xml
+
+force-app/wow/web_to_case/customMetadata/Queue_redirection.WEB_SE.md-meta.xml
 package.xml
 
 # LWC configuration files
@@ -10,3 +16,32 @@ package.xml
 
 # LWC Jest
 **/__tests__/**
+
+#sites
+force-app/ucr/default/sites/IdentityCore.site-meta.xml
+
+#List view
+**listViews
+
+#WMF Agora Free Order
+Agora_Free_Order.namedCredential-meta.xml
+ApiAgoraOrder.Wmf.md-meta.xml
+woo_freeOrderAgoraForm.d.ts
+force-app/wow/wmf_order/lwc/woo_freeOrderAgoraForm.d.ts
+
+# Bug in Salesforce metadata
+# https://success.salesforce.com/_ui/core/chatter/groups/GroupProfilePage?g=0F93A000000HTp1&fId=0D53A00003NmQ4c
+# https://success.salesforce.com/issues_view?id=a1p3A000001YnUtQAK
+
+force-app/main/default/standardValueSets/ContractStatus.standardValueSet-meta.xml
+
+# unknnown issue
+datacategorygroups/**
+
+# Org Wide Email Address
+# https://success.salesforce.com/_ui/core/chatter/groups/GroupProfilePage?g=0F93A000000HTp1&fId=0D53A000043KVUw
+
+# SEBWAY
+
+# ignore global picklist country
+**/globalValueSets/Country.globalValueSet-meta.xml

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Main_Order__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>A complaint from a customer can lead to the creation of a Main Order with several related Subsidiary Orders</description>
+    <externalId>false</externalId>
+    <label>Main Order</label>
+    <referenceTo>WOO_WMF_Orders__c</referenceTo>
+    <relationshipLabel>Subsidiary CCC orders</relationshipLabel>
+    <relationshipName>Subsidiary_Orders</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

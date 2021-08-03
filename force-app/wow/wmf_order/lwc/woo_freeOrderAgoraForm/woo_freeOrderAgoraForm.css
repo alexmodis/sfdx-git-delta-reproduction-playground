@@ -1,0 +1,12 @@
+.THIS {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.THIS.main-card {
+    min-height: 100px;
+}
+
+.address-label {
+    text-decoration: underline;
+}

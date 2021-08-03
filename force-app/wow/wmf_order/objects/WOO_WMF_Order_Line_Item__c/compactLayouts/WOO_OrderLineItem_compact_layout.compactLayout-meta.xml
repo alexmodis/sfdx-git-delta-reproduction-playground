@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOO_OrderLineItem_compact_layout</fullName>
+    <fields>Name</fields>
+    <fields>WOO_Product__c</fields>
+    <fields>WOO_Product_CMMF__c</fields>
+    <fields>WOO_Product_reference__c</fields>
+    <fields>WOO_Requested_quantity__c</fields>
+    <label>OrderLineItem compact layout</label>
+</CompactLayout>

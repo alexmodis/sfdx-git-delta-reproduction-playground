@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOO_Order_Type__c</fullName>
+    <defaultValue>&apos;Finished products&apos;</defaultValue>
+    <externalId>false</externalId>
+    <label>Order Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Finished products</fullName>
+                <default>false</default>
+                <label>Finished products</label>
+            </value>
+            <value>
+                <fullName>Spare part</fullName>
+                <default>false</default>
+                <label>Spare part</label>
+            </value>
+            <value>
+                <fullName>FOC</fullName>
+                <default>false</default>
+                <label>Spare part and accessories (Free Of Charge)</label>
+            </value>
+            <value>
+                <fullName>FEX</fullName>
+                <default>false</default>
+                <label>Finish product (Free Exchange)</label>
+            </value>
+            <value>
+                <fullName>Goodwill</fullName>
+                <default>false</default>
+                <label>Other free order type (goodwill)</label>
+            </value>
+            <value>
+                <fullName>Goodwill_SpareParts</fullName>
+                <default>false</default>
+                <label>Other free order type (goodwill : Spare Parts)</label>
+            </value>
+            <value>
+                <fullName>Goodwill_Product</fullName>
+                <default>false</default>
+                <label>Other free order type (goodwill : Product)</label>
+            </value>
+            <value>
+                <fullName>Repair</fullName>
+                <default>false</default>
+                <label>Repair</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

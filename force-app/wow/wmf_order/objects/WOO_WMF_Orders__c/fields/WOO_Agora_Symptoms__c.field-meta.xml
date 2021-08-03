@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOO_Agora_Symptoms__c</fullName>
+    <externalId>false</externalId>
+    <label>IRIS code designation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>WOO_Order_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MissingOrRecipeBookDefect</fullName>
+                <default>false</default>
+                <label>Missing / Any defect related to the recipe book</label>
+            </value>
+            <value>
+                <fullName>DefectNotOnConsumer</fullName>
+                <default>false</default>
+                <label>Defect which it is certain that the origin is not due to the consumer</label>
+            </value>
+            <value>
+                <fullName>CommercialAction</fullName>
+                <default>false</default>
+                <label>Commercial action (Parts brocken by the conso…)</label>
+            </value>
+            <value>
+                <fullName>GoodwillGesture</fullName>
+                <default>false</default>
+                <label>goodwill gesture</label>
+            </value>
+            <value>
+                <fullName>DefectiveProduct</fullName>
+                <default>false</default>
+                <label>Defective product</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>FOC</controllingFieldValue>
+            <valueName>MissingOrRecipeBookDefect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOC</controllingFieldValue>
+            <valueName>DefectNotOnConsumer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOC</controllingFieldValue>
+            <valueName>CommercialAction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEX</controllingFieldValue>
+            <valueName>DefectiveProduct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goodwill</controllingFieldValue>
+            <controllingFieldValue>Goodwill_SpareParts</controllingFieldValue>
+            <controllingFieldValue>Goodwill_Product</controllingFieldValue>
+            <valueName>GoodwillGesture</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

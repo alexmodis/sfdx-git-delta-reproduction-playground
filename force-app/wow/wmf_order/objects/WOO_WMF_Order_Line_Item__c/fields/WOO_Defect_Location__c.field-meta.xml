@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOO_Defect_Location__c</fullName>
+    <externalId>false</externalId>
+    <label>Defect Location</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>001</fullName>
+                <default>false</default>
+                <label>001 - ABDECKUNG</label>
+            </value>
+            <value>
+                <fullName>002</fullName>
+                <default>false</default>
+                <label>002 - ARM</label>
+            </value>
+            <value>
+                <fullName>003</fullName>
+                <default>false</default>
+                <label>003 - AUFHÄNGUNG</label>
+            </value>
+            <value>
+                <fullName>005</fullName>
+                <default>false</default>
+                <label>005 - AUSGUß</label>
+            </value>
+            <value>
+                <fullName>008</fullName>
+                <default>false</default>
+                <label>008 - BESCHICHTUNG</label>
+            </value>
+            <value>
+                <fullName>009</fullName>
+                <default>false</default>
+                <label>009 - BESPANNUNG</label>
+            </value>
+            <value>
+                <fullName>012</fullName>
+                <default>false</default>
+                <label>012 - ARTIKEL</label>
+            </value>
+            <value>
+                <fullName>013</fullName>
+                <default>false</default>
+                <label>013 - BODEN AUSSEN</label>
+            </value>
+            <value>
+                <fullName>014</fullName>
+                <default>false</default>
+                <label>014 - BODEN INNEN</label>
+            </value>
+            <value>
+                <fullName>015</fullName>
+                <default>false</default>
+                <label>015 - BOLZEN</label>
+            </value>
+            <value>
+                <fullName>017</fullName>
+                <default>false</default>
+                <label>017 - BÜGEL</label>
+            </value>
+            <value>
+                <fullName>019</fullName>
+                <default>false</default>
+                <label>019 - ETIKETT</label>
+            </value>
+            <value>
+                <fullName>020</fullName>
+                <default>false</default>
+                <label>020 - DECKEL/HAUBE</label>
+            </value>
+            <value>
+                <fullName>021</fullName>
+                <default>false</default>
+                <label>021 - DEKOR</label>
+            </value>
+            <value>
+                <fullName>022</fullName>
+                <default>false</default>
+                <label>022 - DICHTUNG</label>
+            </value>
+            <value>
+                <fullName>026</fullName>
+                <default>false</default>
+                <label>026 - ERSATZ</label>
+            </value>
+            <value>
+                <fullName>029</fullName>
+                <default>false</default>
+                <label>029 - GESTELL</label>
+            </value>
+            <value>
+                <fullName>030</fullName>
+                <default>false</default>
+                <label>030 - FEDER</label>
+            </value>
+            <value>
+                <fullName>031</fullName>
+                <default>false</default>
+                <label>031 - FUSS</label>
+            </value>
+            <value>
+                <fullName>032</fullName>
+                <default>false</default>
+                <label>032 - HALTERUNG/ANSCHLAG</label>
+            </value>
+            <value>
+                <fullName>033</fullName>
+                <default>false</default>
+                <label>033 - GEWINDE</label>
+            </value>
+            <value>
+                <fullName>035</fullName>
+                <default>false</default>
+                <label>035 - GRIFF/HEFT</label>
+            </value>
+            <value>
+                <fullName>036</fullName>
+                <default>false</default>
+                <label>036 - TOPFGRIFF</label>
+            </value>
+            <value>
+                <fullName>037</fullName>
+                <default>false</default>
+                <label>037 - DECKELGRIFF</label>
+            </value>
+            <value>
+                <fullName>038</fullName>
+                <default>false</default>
+                <label>038 - INDUKTIONSBODEN</label>
+            </value>
+            <value>
+                <fullName>039</fullName>
+                <default>false</default>
+                <label>039 - ALLHERDBODEN</label>
+            </value>
+            <value>
+                <fullName>040</fullName>
+                <default>false</default>
+                <label>040 - HOHE KANTE</label>
+            </value>
+            <value>
+                <fullName>041</fullName>
+                <default>false</default>
+                <label>041 - DECKELGRIFF SKT</label>
+            </value>
+            <value>
+                <fullName>042</fullName>
+                <default>false</default>
+                <label>042 - DECKEL SKT</label>
+            </value>
+            <value>
+                <fullName>043</fullName>
+                <default>false</default>
+                <label>043 - KANTE</label>
+            </value>
+            <value>
+                <fullName>044</fullName>
+                <default>false</default>
+                <label>044 - KLINGE</label>
+            </value>
+            <value>
+                <fullName>045</fullName>
+                <default>false</default>
+                <label>045 - KNOPF</label>
+            </value>
+            <value>
+                <fullName>047</fullName>
+                <default>false</default>
+                <label>047 - KÖRPER, AUSSEN</label>
+            </value>
+            <value>
+                <fullName>048</fullName>
+                <default>false</default>
+                <label>048 - KÖRPER, INNEN</label>
+            </value>
+            <value>
+                <fullName>051</fullName>
+                <default>false</default>
+                <label>051 - LAFFE</label>
+            </value>
+            <value>
+                <fullName>057</fullName>
+                <default>false</default>
+                <label>057 - DRUCKANZEIGE</label>
+            </value>
+            <value>
+                <fullName>059</fullName>
+                <default>false</default>
+                <label>059 - OBERFLÄCHE</label>
+            </value>
+            <value>
+                <fullName>060</fullName>
+                <default>false</default>
+                <label>060 - OBERTEIL</label>
+            </value>
+            <value>
+                <fullName>066</fullName>
+                <default>false</default>
+                <label>066 - RAND</label>
+            </value>
+            <value>
+                <fullName>071</fullName>
+                <default>false</default>
+                <label>071 - SICHERHEITSVENTIL</label>
+            </value>
+            <value>
+                <fullName>072</fullName>
+                <default>false</default>
+                <label>072 - FONDUE</label>
+            </value>
+            <value>
+                <fullName>074</fullName>
+                <default>false</default>
+                <label>074 - CERANFELD</label>
+            </value>
+            <value>
+                <fullName>075</fullName>
+                <default>false</default>
+                <label>075 - SCHNEIDE</label>
+            </value>
+            <value>
+                <fullName>076</fullName>
+                <default>false</default>
+                <label>076 - SIEB</label>
+            </value>
+            <value>
+                <fullName>077</fullName>
+                <default>false</default>
+                <label>077 - STEMPEL/KENNZEICHNUNG</label>
+            </value>
+            <value>
+                <fullName>078</fullName>
+                <default>false</default>
+                <label>078 - STIEL</label>
+            </value>
+            <value>
+                <fullName>080</fullName>
+                <default>false</default>
+                <label>080 - FLÖTE</label>
+            </value>
+            <value>
+                <fullName>081</fullName>
+                <default>false</default>
+                <label>081 - STOPFEN</label>
+            </value>
+            <value>
+                <fullName>082</fullName>
+                <default>false</default>
+                <label>082 - TÜLLE</label>
+            </value>
+            <value>
+                <fullName>083</fullName>
+                <default>false</default>
+                <label>083 - UNTERTEIL</label>
+            </value>
+            <value>
+                <fullName>084</fullName>
+                <default>false</default>
+                <label>084 - MAHLWERK/RÄTSCHE</label>
+            </value>
+            <value>
+                <fullName>085</fullName>
+                <default>false</default>
+                <label>085 - HAUPTVENTIL</label>
+            </value>
+            <value>
+                <fullName>086</fullName>
+                <default>false</default>
+                <label>086 - VERPACKUNG</label>
+            </value>
+            <value>
+                <fullName>088</fullName>
+                <default>false</default>
+                <label>088 - VERSCHLUSS</label>
+            </value>
+            <value>
+                <fullName>092</fullName>
+                <default>false</default>
+                <label>092 - WELLENSCHLIFF</label>
+            </value>
+            <value>
+                <fullName>093</fullName>
+                <default>false</default>
+                <label>093 - GRAVUR</label>
+            </value>
+            <value>
+                <fullName>095</fullName>
+                <default>false</default>
+                <label>095 - ZINKEN</label>
+            </value>
+            <value>
+                <fullName>097</fullName>
+                <default>false</default>
+                <label>097 - LIEFERUNG</label>
+            </value>
+            <value>
+                <fullName>098</fullName>
+                <default>false</default>
+                <label>098 - TIMER</label>
+            </value>
+            <value>
+                <fullName>099</fullName>
+                <default>false</default>
+                <label>099 - ZURÜCK</label>
+            </value>
+            <value>
+                <fullName>200</fullName>
+                <default>false</default>
+                <label>200 - HEIZUNG</label>
+            </value>
+            <value>
+                <fullName>201</fullName>
+                <default>false</default>
+                <label>201 - PADHALTER</label>
+            </value>
+            <value>
+                <fullName>999</fullName>
+                <default>false</default>
+                <label>999 - NICHT RELEVANT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="SAP order management" icon-name="custom:custom63">
+        <div class="slds-var-m-around_medium">
+            <template if:true={loaded}>
+                <p class="slds-var-m-bottom_small">
+                    <lightning-button
+                        label="Synchronize address"
+                        onclick={synchronizeAccount}
+                    ></lightning-button>
+                    <lightning-button
+                        label="Simulate"
+                        onclick={simulate}
+                        if:true={isSimulateVisible}
+                    ></lightning-button>
+                    <lightning-button
+                        label="Create"
+                        onclick={create}
+                        if:true={isCreateVisible}
+                    ></lightning-button>
+                </p>
+            </template>
+            <template if:false={loaded}>
+                <lightning-spinner alternative-text="Loading"></lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,65 @@
+<template>
+    <div class="slds-card slds-is-relative">
+        <lightning-spinner
+            if:true={isLoading}
+            class="slds-spinner_container"
+            alternative-text={labels.ALLLoading}
+            size="medium"
+        >
+        </lightning-spinner>
+        <div class="slds-card__header slds-grid">
+            <header
+                data-id="address-header"
+                class="slds-media slds-media--center slds-has-flexi-truncate"
+            >
+                <div class="slds-media__figure">
+                    <lightning-icon icon-name="standard:address" size="small"></lightning-icon>
+                </div>
+                <div class="slds-media__body slds-text-heading--small">
+                    <h2 class="">
+                        <div class="slds-card__header-link slds-truncate">
+                            <span>{labels.AgoraOrder_Addr_CardTitle}</span>
+                        </div>
+                    </h2>
+                </div>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="slds-text-color_error" if:true={errorMessage}>{errorMessage}</div>
+            <div class="slds-grid slds-grid_vertical-align-end">
+                <lightning-combobox
+                    class="slds-grow address-picker"
+                    name="addresses"
+                    label={labels.AgoraOrder_Addr_PicklistLabel}
+                    placeholder={labels.AgoraOrder_Addr_PicklistLabel}
+                    options={addressPicklist}
+                    onchange={changedSelectAdr}
+                ></lightning-combobox>
+                <lightning-icon
+                    class="slds-m-horizontal_small slds-m-bottom_small slds-icon-text-error"
+                    icon-name={iconAddress.name}
+                    variant={iconAddress.variant}
+                    size="small"
+                    alternative-text={iconAddress.title}
+                    title={iconAddress.title}
+                ></lightning-icon>
+            </div>
+            <lightning-input-address
+                city-label={labels.city}
+                country-label={labels.country}
+                province-label={labels.province}
+                postal-code-label={labels.postalCode}
+                street-label={labels.street}
+                street={addressPicked.street}
+                city={addressPicked.city}
+                country={addressPicked.country}
+                postal-code={addressPicked.postalCode}
+                country-options={countryOptions}
+                onchange={handleAddrChange}
+                show-address-lookup={addressPicked.showAddressLookup}
+                validity={addressPicked.isValid}
+                disabled={addressPicked.disabled}
+            ></lightning-input-address>
+        </div>
+    </div>
+</template>

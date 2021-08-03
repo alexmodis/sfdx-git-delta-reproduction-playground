@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOO_Agora_ProductRefCom__c</fullName>
+    <description>When an order is sent this field is used to store which Commercial Reference has been picked for the order.</description>
+    <externalId>false</externalId>
+    <label>Retailer Zip Code</label>
+    <length>220</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,32 @@
+<template>
+    <div if:true={products} class="slds-is-relative">
+        <lightning-spinner
+            if:true={isLoading}
+            class="slds-spinner_container"
+            alternative-text={labels.ALLLoading}
+            size="medium"
+        ></lightning-spinner>
+        <div class="" if:true={products.isEmpty}>{labels.AgoraOrder_NoProductsFound}</div>
+        <lightning-datatable
+            if:false={products.isEmpty}
+            key-field="products.keyField"
+            data={products.data}
+            columns={products.columns}
+            max-row-selection="1"
+            onrowselection={handleProductSelection}
+        >
+        </lightning-datatable>
+        <div class="slds-grid slds-grid_align-end">
+            <lightning-button
+                if:false={isConfirmedButtonHidden}
+                variant="brand-outline"
+                label={labels.AgoraOrder_ConfirmSelection}
+                title={labels.AgoraOrder_ConfirmSelection}
+                disabled={confirmProductDisabled}
+                onclick={handleConfirmProduct}
+                class="slds-var-m-around_medium"
+            >
+            </lightning-button>
+        </div>
+    </div>
+</template>

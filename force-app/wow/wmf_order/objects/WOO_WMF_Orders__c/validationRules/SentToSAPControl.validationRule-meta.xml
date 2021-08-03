@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SentToSAPControl</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				NOT($User.Bypass_Validation_Rules__c),
+				RecordType.DeveloperName = &apos;SAP_Orders&apos;,
+    OR(ISPICKVAL(WOO_SAP_status__c, &quot;Ready to be sent&quot;),ISPICKVAL(WOO_SAP_status__c, &quot;Sent&quot;)),
+    OR(ISCHANGED(WOO_Commercial_organization__c), ISCHANGED(WOO_Order_Type__c), ISCHANGED(WOO_Requested_delivery_date__c), ISCHANGED(WOO_CPD_client_code__c), ISCHANGED(WOO_Comment__c))
+)</errorConditionFormula>
+    <errorMessage>You can&apos;t modify or delete an order already sent to SAP.</errorMessage>
+</ValidationRule>

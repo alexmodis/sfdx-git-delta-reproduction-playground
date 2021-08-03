@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOO_Assigment__c</fullName>
+    <externalId>false</externalId>
+    <label>Assigment</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>004</fullName>
+                <default>false</default>
+                <label>004 - SCHADEN (PERSONEN-UND/ODER SAC</label>
+            </value>
+            <value>
+                <fullName>010</fullName>
+                <default>false</default>
+                <label>010 - IG BERECHTIGT</label>
+            </value>
+            <value>
+                <fullName>011</fullName>
+                <default>false</default>
+                <label>011 - IG NICHT BERECHTIGT</label>
+            </value>
+            <value>
+                <fullName>012</fullName>
+                <default>false</default>
+                <label>012 - IG KULANZ</label>
+            </value>
+            <value>
+                <fullName>020</fullName>
+                <default>false</default>
+                <label>020 - AG KULANZ</label>
+            </value>
+            <value>
+                <fullName>021</fullName>
+                <default>false</default>
+                <label>021 - AG BESONDERHEITEN</label>
+            </value>
+            <value>
+                <fullName>022</fullName>
+                <default>false</default>
+                <label>022 - AG RÜCKSENDUNG</label>
+            </value>
+            <value>
+                <fullName>999</fullName>
+                <default>false</default>
+                <label>999 - NICHT RELEVANT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

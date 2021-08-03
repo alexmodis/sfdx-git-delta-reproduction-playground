@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderSentToSAP</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				NOT($User.Bypass_Validation_Rules__c),
+				WOO_WMF_Order__r.RecordType.Name = &apos;SAP_Orders&apos;,
+    OR(
+				    ISPICKVAL(WOO_WMF_Order__r.WOO_SAP_status__c ,&quot;Ready to be sent&quot;),
+        ISPICKVAL(WOO_WMF_Order__r.WOO_SAP_status__c , &quot;Sent&quot;)
+    )
+)</errorConditionFormula>
+    <errorMessage>You can&apos;t change, add or delete Order Line Items if the Order is already sent to SAP.</errorMessage>
+</ValidationRule>

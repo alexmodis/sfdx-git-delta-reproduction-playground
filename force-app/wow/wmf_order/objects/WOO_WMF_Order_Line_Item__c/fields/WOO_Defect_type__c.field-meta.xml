@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOO_Defect_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Defect type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>001</fullName>
+                <default>false</default>
+                <label>001 - ABBLASEN SCHLAGARTIG</label>
+            </value>
+            <value>
+                <fullName>002</fullName>
+                <default>false</default>
+                <label>002 - ANFRESSUNGEN</label>
+            </value>
+            <value>
+                <fullName>003</fullName>
+                <default>false</default>
+                <label>003 - ANGELAUFEN</label>
+            </value>
+            <value>
+                <fullName>004</fullName>
+                <default>false</default>
+                <label>004 - AUSGEBLEICHT</label>
+            </value>
+            <value>
+                <fullName>005</fullName>
+                <default>false</default>
+                <label>005 - AUSGEBROCHEN</label>
+            </value>
+            <value>
+                <fullName>006</fullName>
+                <default>false</default>
+                <label>006 - ANKLEBEN</label>
+            </value>
+            <value>
+                <fullName>007</fullName>
+                <default>false</default>
+                <label>007 - BOMBIERUNG</label>
+            </value>
+            <value>
+                <fullName>008</fullName>
+                <default>false</default>
+                <label>008 - ABGEBLÄTTERT/AUFGESTIEGEN</label>
+            </value>
+            <value>
+                <fullName>009</fullName>
+                <default>false</default>
+                <label>009 - BLASEN</label>
+            </value>
+            <value>
+                <fullName>010</fullName>
+                <default>false</default>
+                <label>010 - DELLEN/VERBEULT</label>
+            </value>
+            <value>
+                <fullName>011</fullName>
+                <default>false</default>
+                <label>011 - SCHLAGMARKEN</label>
+            </value>
+            <value>
+                <fullName>012</fullName>
+                <default>false</default>
+                <label>012 - DRUCKSTELLEN</label>
+            </value>
+            <value>
+                <fullName>013</fullName>
+                <default>false</default>
+                <label>013 - DURCHGEDRÜCKT</label>
+            </value>
+            <value>
+                <fullName>014</fullName>
+                <default>false</default>
+                <label>014 - NIETABPLATZER</label>
+            </value>
+            <value>
+                <fullName>015</fullName>
+                <default>false</default>
+                <label>015 - STÖRGERÄUSCHE</label>
+            </value>
+            <value>
+                <fullName>016</fullName>
+                <default>false</default>
+                <label>016 - EINFALLSTELLEN</label>
+            </value>
+            <value>
+                <fullName>017</fullName>
+                <default>false</default>
+                <label>017 - ZERSPRUNGEN</label>
+            </value>
+            <value>
+                <fullName>018</fullName>
+                <default>false</default>
+                <label>018 - FUNKTION SKT</label>
+            </value>
+            <value>
+                <fullName>019</fullName>
+                <default>false</default>
+                <label>019 - FALSCH/VERTAUSCHT</label>
+            </value>
+            <value>
+                <fullName>020</fullName>
+                <default>false</default>
+                <label>020 - MONTAGEFEHLER</label>
+            </value>
+            <value>
+                <fullName>021</fullName>
+                <default>false</default>
+                <label>021 - FARBABWEICHUNG</label>
+            </value>
+            <value>
+                <fullName>022</fullName>
+                <default>false</default>
+                <label>022 - INDUKTIONSPROBLEME</label>
+            </value>
+            <value>
+                <fullName>023</fullName>
+                <default>false</default>
+                <label>023 - DRUCKWERTE</label>
+            </value>
+            <value>
+                <fullName>024</fullName>
+                <default>false</default>
+                <label>024 - FEHLT/UNVOLLSTÄNDIG</label>
+            </value>
+            <value>
+                <fullName>025</fullName>
+                <default>false</default>
+                <label>025 - FLECKIG</label>
+            </value>
+            <value>
+                <fullName>026</fullName>
+                <default>false</default>
+                <label>026 - STUMPF</label>
+            </value>
+            <value>
+                <fullName>027</fullName>
+                <default>false</default>
+                <label>027 - FORMABWEICHUNG</label>
+            </value>
+            <value>
+                <fullName>028</fullName>
+                <default>false</default>
+                <label>028 - NICHT MEHR VERWENDEN</label>
+            </value>
+            <value>
+                <fullName>029</fullName>
+                <default>false</default>
+                <label>029 - GRATIG/SCHARFKANTIG/RAUH</label>
+            </value>
+            <value>
+                <fullName>030</fullName>
+                <default>false</default>
+                <label>030 - ABGEBROCHEN</label>
+            </value>
+            <value>
+                <fullName>031</fullName>
+                <default>false</default>
+                <label>031 - HACKER/LÖCHER</label>
+            </value>
+            <value>
+                <fullName>033</fullName>
+                <default>false</default>
+                <label>033 - ZU HEIß</label>
+            </value>
+            <value>
+                <fullName>034</fullName>
+                <default>false</default>
+                <label>034 - WIRD NICHT WARM</label>
+            </value>
+            <value>
+                <fullName>036</fullName>
+                <default>false</default>
+                <label>036 - KLEMMT/SCHWERGÄNGIG</label>
+            </value>
+            <value>
+                <fullName>037</fullName>
+                <default>false</default>
+                <label>037 - KORROSION/ROST</label>
+            </value>
+            <value>
+                <fullName>038</fullName>
+                <default>false</default>
+                <label>038 - KOCHFELDSCHADEN</label>
+            </value>
+            <value>
+                <fullName>040</fullName>
+                <default>false</default>
+                <label>040 - LOSE/WACKELT</label>
+            </value>
+            <value>
+                <fullName>050</fullName>
+                <default>false</default>
+                <label>050 - RILLEN/RINGE</label>
+            </value>
+            <value>
+                <fullName>051</fullName>
+                <default>false</default>
+                <label>051 - UNLESBAR/UNDEUTLICH</label>
+            </value>
+            <value>
+                <fullName>052</fullName>
+                <default>false</default>
+                <label>052 - ANGERISSEN</label>
+            </value>
+            <value>
+                <fullName>055</fullName>
+                <default>false</default>
+                <label>055 - POLIERFEHLER/AUSPOLIERUNG</label>
+            </value>
+            <value>
+                <fullName>057</fullName>
+                <default>false</default>
+                <label>057 - OXIDIERFEHLER</label>
+            </value>
+            <value>
+                <fullName>058</fullName>
+                <default>false</default>
+                <label>058 - VERNIERFEHLER</label>
+            </value>
+            <value>
+                <fullName>059</fullName>
+                <default>false</default>
+                <label>059 - VERSÄUBERUNGSFEHLER</label>
+            </value>
+            <value>
+                <fullName>060</fullName>
+                <default>false</default>
+                <label>060 - SCHIEF/EINSEITIG</label>
+            </value>
+            <value>
+                <fullName>061</fullName>
+                <default>false</default>
+                <label>061 - SCHLIEREN/WINDEN</label>
+            </value>
+            <value>
+                <fullName>062</fullName>
+                <default>false</default>
+                <label>062 - STIPPEN/SPRITZER</label>
+            </value>
+            <value>
+                <fullName>063</fullName>
+                <default>false</default>
+                <label>063 - SPALT</label>
+            </value>
+            <value>
+                <fullName>066</fullName>
+                <default>false</default>
+                <label>066 - VERSTANZT</label>
+            </value>
+            <value>
+                <fullName>070</fullName>
+                <default>false</default>
+                <label>070 - UNTERDRUCKBILDUNG</label>
+            </value>
+            <value>
+                <fullName>071</fullName>
+                <default>false</default>
+                <label>071 - UNRUND/OVAL/ECKIG</label>
+            </value>
+            <value>
+                <fullName>072</fullName>
+                <default>false</default>
+                <label>072 - UNGLEICHMßIG/UNSYMMETRISCH</label>
+            </value>
+            <value>
+                <fullName>073</fullName>
+                <default>false</default>
+                <label>073 - UNEBEN</label>
+            </value>
+            <value>
+                <fullName>074</fullName>
+                <default>false</default>
+                <label>074 - UNDICHT</label>
+            </value>
+            <value>
+                <fullName>076</fullName>
+                <default>false</default>
+                <label>076 - VERBOGEN/KRUMM</label>
+            </value>
+            <value>
+                <fullName>077</fullName>
+                <default>false</default>
+                <label>077 - VERBRANNT/VERSCHMORT</label>
+            </value>
+            <value>
+                <fullName>078</fullName>
+                <default>false</default>
+                <label>078 - VERDREHT/VERWUNDEN</label>
+            </value>
+            <value>
+                <fullName>079</fullName>
+                <default>false</default>
+                <label>079 - KRATZER/RUTSCHER</label>
+            </value>
+            <value>
+                <fullName>080</fullName>
+                <default>false</default>
+                <label>080 - VERSCHLIFFEN</label>
+            </value>
+            <value>
+                <fullName>081</fullName>
+                <default>false</default>
+                <label>081 - SCHMUTZ/SCHL.GEREINIGT</label>
+            </value>
+            <value>
+                <fullName>082</fullName>
+                <default>false</default>
+                <label>082 - VERSPRÖDET</label>
+            </value>
+            <value>
+                <fullName>085</fullName>
+                <default>false</default>
+                <label>085 - FETT SPRITZT EXPLOSIONSARTIG</label>
+            </value>
+            <value>
+                <fullName>087</fullName>
+                <default>false</default>
+                <label>087 - PAß-/SITZFEHLER</label>
+            </value>
+            <value>
+                <fullName>089</fullName>
+                <default>false</default>
+                <label>089 - RÜCKSTÄNDE/LÖT- SCHWEIß- KLEB-</label>
+            </value>
+            <value>
+                <fullName>091</fullName>
+                <default>false</default>
+                <label>091 - ZU KLEIN/DÜNN/SCHWACH</label>
+            </value>
+            <value>
+                <fullName>092</fullName>
+                <default>false</default>
+                <label>092 - ZU GROß/DICK/BREIT</label>
+            </value>
+            <value>
+                <fullName>093</fullName>
+                <default>false</default>
+                <label>093 - ZU LANG/HOCH/TIEF</label>
+            </value>
+            <value>
+                <fullName>094</fullName>
+                <default>false</default>
+                <label>094 - ZU KURZ/ZU NIEDER</label>
+            </value>
+            <value>
+                <fullName>095</fullName>
+                <default>false</default>
+                <label>095 - ZU SCHMAL/SPITZ</label>
+            </value>
+            <value>
+                <fullName>097</fullName>
+                <default>false</default>
+                <label>097 - BESCHÄDIGUNG</label>
+            </value>
+            <value>
+                <fullName>098</fullName>
+                <default>false</default>
+                <label>098 - KEIN FEHLER FESTSTELLBAR</label>
+            </value>
+            <value>
+                <fullName>099</fullName>
+                <default>false</default>
+                <label>099 - ZURÜCK</label>
+            </value>
+            <value>
+                <fullName>200</fullName>
+                <default>false</default>
+                <label>200 - VIBRIERT</label>
+            </value>
+            <value>
+                <fullName>999</fullName>
+                <default>false</default>
+                <label>999 - NICHT RELEVANT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

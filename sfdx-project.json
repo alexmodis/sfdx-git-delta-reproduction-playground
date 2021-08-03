@@ -1,11 +1,15 @@
 {
   "packageDirectories": [
     {
-      "path": "sgd",
+      "path": "force-app",
       "default": true
     }
   ],
   "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "50.0"
+  "sfdcLoginUrl": "https://groupe-seb.my.salesforce.com",
+  "sourceApiVersion": "51.0",
+  "packageAliases": {
+    "ucr-slidingLogin": "0Ho0X000000fxTdSAI",
+    "ucr-slidingLogin@0.1.0-1": "04t0X0000005pCVQAY"
+  }
 }

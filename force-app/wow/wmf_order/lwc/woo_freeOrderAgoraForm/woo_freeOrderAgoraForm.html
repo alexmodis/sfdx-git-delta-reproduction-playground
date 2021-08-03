@@ -1,0 +1,269 @@
+<template>
+    <div class="main-card slds-card slds-p-around_medium slds-is-relative">
+        <lightning-spinner
+            if:true={isLoading}
+            class="slds-spinner_container"
+            alternative-text={labels.ALLLoading}
+            size="medium"
+        >
+        </lightning-spinner>
+
+        <!-- ======================================================================= -->
+        <!--                                 product Selection Step                  -->
+        <!-- ======================================================================= -->
+
+        <div class="slds-card" if:true={productSelectionStep}>
+            <c-woo_free-order-agora-product-selection-from-agora
+                onproductselected={mainProductSelected}
+            ></c-woo_free-order-agora-product-selection-from-agora>
+        </div>
+
+        <!-- ======================================================================= -->
+        <!--                    bom And GoodWill Step                                -->
+        <!-- ======================================================================= -->
+
+        <div class="slds-card" if:true={bomAndGoodWillStep}>
+            <div class="slds-m-left--large slds-grid slds-grid_align-spread">
+                <div class="">
+                    <lightning-button
+                        if:true={isBackButtonDisplayed}
+                        class=""
+                        variant="neutral"
+                        label={labels.AgoraOrder_Back}
+                        title={labels.AgoraOrder_Back}
+                        onclick={goPreviousStep}
+                    ></lightning-button>
+                </div>
+                <lightning-button
+                    class=""
+                    variant="brand-outline"
+                    label={sendOrderButtonlabel}
+                    title={labels.AgoraOrder_CreateRepairOrder}
+                    onclick={openSendOrderModal}
+                    disabled={createRepairButtonDisabled}
+                >
+                </lightning-button>
+            </div>
+            <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                    <div class="slds-media__body">
+                        <h2 class="slds-card__header-title">
+                            <div class="slds-card__header slds-truncate" title="Product Name">
+                                <span>{productTitle}</span>
+                            </div>
+                        </h2>
+                    </div>
+                </header>
+            </div>
+            <div class="slds-card__body slds-card__body_inner">
+                <div class="slds-card" if:true={isErrorDisplayed}>
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <lightning-icon
+                                    icon-name="utility:announcement"
+                                    size="small"
+                                    variant="error"
+                                >
+                                </lightning-icon>
+                            </div>
+                            <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                    <div
+                                        class="slds-card__header slds-truncate slds-text-color_error"
+                                    >
+                                        <span>
+                                            {labels.AgoraOrder_Error}: {repairResponse.errorMessage}
+                                        </span>
+                                    </div>
+                                </h2>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <template
+                            class=""
+                            for:each={repairResponse.validationErrors}
+                            for:item="errorLine"
+                        >
+                            <div class="slds-grid" key={errorLine.field}>
+                                <c-woo_free-order-agora-error-line
+                                    error-line={errorLine}
+                                ></c-woo_free-order-agora-error-line>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <div if:true={isFoc} class="slds-card" title="Bill Of Materials">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <lightning-icon
+                                    icon-name="standard:action_list_component"
+                                    size="small"
+                                >
+                                </lightning-icon>
+                            </div>
+                            <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                    <div
+                                        class="slds-card__header slds-truncate"
+                                        title={labels.AgoraOrder_BomListTitle}
+                                    >
+                                        <span>{labels.AgoraOrder_BomListTitle}</span>
+                                    </div>
+                                </h2>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner" if:true={bomList}>
+                        <div class="" if:true={bomList.isEmpty}>
+                            {labels.AgoraOrder_NoProductsFound}
+                        </div>
+                        <div if:false={bomList.isEmpty} style="height: 20vh">
+                            <lightning-datatable
+                                key-field={bomList.keyField}
+                                data={bomList.data}
+                                columns={bomList.columns}
+                                enable-infinite-loading
+                                class="bom-table"
+                                suppress-bottom-bar={bomList.suppressBottomBar}
+                                oncellchange={bomOnCellChange}
+                                errors={bomList.errors}
+                                onrowselection={updateSelectedBomRows}
+                                selected-rows={selectedBomKeys}
+                            >
+                            </lightning-datatable>
+                        </div>
+                    </div>
+                </div>
+                <div if:true={isFex} class="slds-card" title="Product chosen">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <lightning-icon
+                                    icon-name="standard:action_list_component"
+                                    size="small"
+                                >
+                                </lightning-icon>
+                            </div>
+                            <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                    <div
+                                        class="slds-card__header slds-truncate"
+                                        title={labels.AgoraOrder_FexPoductSectionTitle}
+                                    >
+                                        <span>{labels.AgoraOrder_FexPoductSectionTitle}</span>
+                                    </div>
+                                </h2>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner" if:true={fexProdReplacement}>
+                        <div style="height: 20vh">
+                            <lightning-datatable
+                                key-field={fexProdReplacement.keyField}
+                                data={fexProdReplacement.data}
+                                columns={fexProdReplacement.columns}
+                                class="fex-prod-repl-table"
+                                suppress-bottom-bar={fexProdReplacement.suppressBottomBar}
+                                hide-checkbox-column={fexProdReplacement.hideCheckboxColumn}
+                            >
+                            </lightning-datatable>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-card">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <lightning-icon icon-name="standard:thanks" size="small">
+                                </lightning-icon>
+                            </div>
+                            <div class="slds-media__body slds-grid">
+                                <h2 class="slds-card__header-title slds-grow">
+                                    <div
+                                        class="slds-card__header slds-truncate"
+                                        title={labels.AgoraOrder_BomListTitle}
+                                    >
+                                        <span>{labels.AgoraOrder_GoodWillTitle}</span>
+                                    </div>
+                                </h2>
+                                <div class="slds-grid slds-grid_vertical-align-end">
+                                    <lightning-button
+                                        class=""
+                                        variant="brand-outline"
+                                        label={labels.AgoraOrder_AddSfProduct}
+                                        title={labels.AgoraOrder_AddSfProduct}
+                                        onclick={sfProductModal}
+                                    >
+                                    </lightning-button>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <div style="height: 20vh">
+                            <lightning-datatable
+                                if:true={goodWillList}
+                                key-field={goodWillList.keyField}
+                                data={goodWillList.data}
+                                columns={goodWillList.columns}
+                                enable-infinite-loading
+                                class="goodwill-table"
+                                selected-rows={selectedGoodWillsKeys}
+                                suppress-bottom-bar={goodWillList.suppressBottomBar}
+                                oncellchange={goodWillOnCellChange}
+                                errors={goodWillList.errors}
+                                onrowselection={updateSelectedGwRows}
+                            >
+                            </lightning-datatable>
+                        </div>
+                        <c-woo_free-order-agora-find-sf-products-modal
+                            ccc-group={caseCccGroup}
+                            class="sf-products-modal"
+                            products-country={orderRetailerCountry}
+                        >
+                        </c-woo_free-order-agora-find-sf-products-modal>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid">
+                <div class="slds-text-title address-label">
+                    {labels.AgoraOrder_InfoSelectAddress}
+                </div>
+                <lightning-icon
+                    class="slds-m-horizontal_small slds-m-bottom_small slds-icon-text-error"
+                    icon-name={iconAddress.name}
+                    variant={iconAddress.variant}
+                    size="small"
+                    alternative-text="valid"
+                    title="valid"
+                    onclick={goToAddressCmp}
+                ></lightning-icon>
+            </div>
+            <c-woo_free-order-agora-send-order-modal></c-woo_free-order-agora-send-order-modal>
+        </div>
+        <!-- ======================================================================= -->
+        <!--                    Success Step                                         -->
+        <!-- ======================================================================= -->
+
+        <div class="slds-card" if:true={orderSentSuccessStep}>
+            <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="utility:check" size="small" variant="success ">
+                        </lightning-icon>
+                    </div>
+                    <div class="slds-media__body">
+                        <h2 class="slds-card__header-title">
+                            <div class="slds-card__header slds-truncate">
+                                <span> {labels.AgoraOrder_OrderSentSuccess} </span>
+                            </div>
+                        </h2>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Assignment_to_generate_error</name>
+        <label>Assignment to generate error</label>
+        <locationX>143</locationX>
+        <locationY>1247</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.WOO_Comment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>&apos;Error to prevent delete&apos;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_to_generate_error</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Reset_Order_SAP_Status</name>
+        <label>Reset Order SAP Status</label>
+        <locationX>143</locationX>
+        <locationY>791</locationY>
+        <assignmentItems>
+            <assignToReference>get_Order_0.WOO_SAP_status__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Order</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Bypass_Flow</name>
+        <label>Bypass Flow</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <defaultConnector>
+            <targetReference>get_Order_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>no Bypass</defaultConnectorLabel>
+        <rules>
+            <name>Bypass</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.Bypass_Workflows__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Bypass</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_parent_SAP_Order</name>
+        <label>Is parent SAP Order</label>
+        <locationX>473</locationX>
+        <locationY>551</locationY>
+        <defaultConnectorLabel>Parent is Free Orders OR Subsidiaries</defaultConnectorLabel>
+        <rules>
+            <name>Parent_is_SAP_Orders</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>get_Order_0.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SAP_Orders</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Order_Simulated</targetReference>
+            </connector>
+            <label>Parent is SAP_Orders</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Order_sent_to_SAP</name>
+        <label>Order sent to SAP</label>
+        <locationX>275</locationX>
+        <locationY>1127</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.WOO_WMF_Order__r.WOO_SAP_status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ready to be sent</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.WOO_WMF_Order__r.WOO_SAP_status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sent</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assignment_to_generate_error</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Order_Simulated</name>
+        <label>Order Simulated</label>
+        <locationX>275</locationX>
+        <locationY>671</locationY>
+        <defaultConnector>
+            <targetReference>Order_sent_to_SAP</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Simulated</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.WOO_WMF_Order__r.WOO_SAP_status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Simulated with errors</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.WOO_WMF_Order__r.WOO_SAP_status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Simulated OK</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Reset_Order_SAP_Status</targetReference>
+            </connector>
+            <label>Simulated</label>
+        </rules>
+    </decisions>
+    <description>Stop Order Line Item Delete if order sent to SAP and reset Order SAP Status if Order is simulated</description>
+    <interviewLabel>Stop order line item delete when order sent to asp {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Stop order line item delete and Reset Order status</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>get_Order_0</name>
+        <label>get Order</label>
+        <locationX>473</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_parent_SAP_Order</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WOO_WMF_Order__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>WOO_WMF_Orders__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Order</name>
+        <label>Update Order</label>
+        <locationX>143</locationX>
+        <locationY>911</locationY>
+        <connector>
+            <targetReference>Order_sent_to_SAP</targetReference>
+        </connector>
+        <inputReference>get_Order_0</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_to_generate_error</name>
+        <label>Update to generate error</label>
+        <locationX>143</locationX>
+        <locationY>1367</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Bypass_Flow</targetReference>
+        </connector>
+        <object>WOO_WMF_Order_Line_Item__c</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

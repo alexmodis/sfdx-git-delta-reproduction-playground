@@ -1,0 +1,111 @@
+<template>
+    <template if:true={isModalOpened}>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <section
+            onclick={closeModal}
+            role="dialog"
+            tabindex="-1"
+            aria-labelledby="modal-heading-01"
+            aria-modal="true"
+            aria-describedby="modal-content-id-1"
+            class="slds-modal slds-fade-in-open"
+        >
+            <div class="slds-modal__container">
+                <div onclick={stopClick} class="slds-is-relative">
+                    <lightning-spinner
+                        if:true={isLoading}
+                        class="slds-spinner_container"
+                        alternative-text={labels.ALLLoading}
+                        size="medium"
+                    >
+                    </lightning-spinner>
+                    <header class="slds-modal__header">
+                        <button
+                            onclick={closeModal}
+                            class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                            title={labels.AgoraOrder_Close}
+                        >
+                            <lightning-icon
+                                icon-name="utility:close"
+                                alternative-text={labels.AgoraOrder_Close}
+                                title={labels.AgoraOrder_Close}
+                                variant="inverse"
+                                size="medium"
+                            >
+                            </lightning-icon>
+                        </button>
+                        <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">
+                            {labels.AgoraOrder_AddSfProduct}
+                        </h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <template if:true={sfStep}>
+                            <div
+                                class="slds-p-around_medium lgc-bg slds-grid slds-grid_vertical-align-end"
+                            >
+                                <lightning-input
+                                    type="search"
+                                    label={labels.AgoraOrder_SearchProductsPlaceHolder}
+                                    class="sf-product-search-bar slds-grow"
+                                >
+                                </lightning-input>
+                                <lightning-button
+                                    variant="neutral"
+                                    label={labels.AgoraOrder_SearchProducts}
+                                    title={labels.AgoraOrder_SearchProducts}
+                                    onclick={searchSfProductsFront}
+                                    class="slds-m-left_medium"
+                                >
+                                </lightning-button>
+                            </div>
+                            <div style="height: 30vh" if:true={sfSearchResult}>
+                                <lightning-datatable
+                                    if:false={sfSearchResult.isEmpty}
+                                    key-field={sfSearchResult.keyField}
+                                    data={sfSearchResult.data}
+                                    columns={sfSearchResult.columns}
+                                    enable-infinite-loading={sfSearchResult.enableInfiniteLoading}
+                                    max-row-selection="1"
+                                    onloadmore={loadNextRows}
+                                    onrowselection={handleRowSelectionSf}
+                                >
+                                </lightning-datatable>
+                            </div>
+                            <!-- <div
+                                if:true={sfSearchResult}
+                                class="slds-text-body_regular slds-m-around_medium slds-text-align_right"
+                            >
+                                {sfSearchResult.pagingText}
+                            </div> -->
+                        </template>
+                        <template if:true={agoraStep}>
+                            <c-woo_free-order-agora-product-selection-from-agora
+                                onproductselected={sfProductSelectedFromAgora}
+                                oncurrentstepchange={agoraProdSelectStepChanged}
+                                is-confirmed-button-hidden={trueValue}
+                            ></c-woo_free-order-agora-product-selection-from-agora
+                        ></template>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning-button
+                            variant="neutral"
+                            label={labels.AgoraOrder_Cancel}
+                            title={labels.AgoraOrder_Cancel}
+                            onclick={closeModal}
+                        >
+                        </lightning-button>
+                        <lightning-button
+                            variant="brand"
+                            label={labels.AgoraOrder_Validate}
+                            title={labels.AgoraOrder_Validate}
+                            disabled={validateProductDisabled}
+                            onclick={validateProduct}
+                            class="slds-m-left_x-small"
+                        >
+                        </lightning-button>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </template>
+</template>

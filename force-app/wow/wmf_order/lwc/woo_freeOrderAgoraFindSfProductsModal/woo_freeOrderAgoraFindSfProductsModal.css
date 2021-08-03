@@ -1,0 +1,7 @@
+@media (min-width: 48em) {
+    .slds-modal__container {
+        min-width: 50%;
+        width: auto;
+        max-width: 90%;
+    }
+}

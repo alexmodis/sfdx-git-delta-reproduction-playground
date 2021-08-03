@@ -1,0 +1,116 @@
+<template>
+    <template if:true={isModalOpened}>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <section
+            onclick={closeModal}
+            role="dialog"
+            tabindex="-1"
+            aria-labelledby="modal-heading-01"
+            aria-modal="true"
+            aria-describedby="modal-content-id-1"
+            class="slds-modal slds-fade-in-open"
+        >
+            <div class="slds-modal__container">
+                <div onclick={stopClick} class="slds-is-relative">
+                    <lightning-spinner
+                        if:true={isLoading}
+                        class="slds-spinner_container"
+                        alternative-text={labels.ALLLoading}
+                        size="medium"
+                    >
+                    </lightning-spinner>
+                    <header class="slds-modal__header">
+                        <button
+                            onclick={closeModal}
+                            class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                            title={labels.AgoraOrder_Close}
+                        >
+                            <lightning-icon
+                                icon-name="utility:close"
+                                alternative-text={labels.AgoraOrder_Close}
+                                title={labels.AgoraOrder_Close}
+                                variant="inverse"
+                                size="medium"
+                            >
+                            </lightning-icon>
+                        </button>
+                        <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">
+                            {labels.AgoraOrder_OrderValidation}
+                        </h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <div class="slds-card__header slds-grid">
+                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                        <div
+                                            class="slds-card__header slds-truncate"
+                                            title="overview"
+                                        >
+                                            <span>{labels.AgoraOrder_OrderOverview}</span>
+                                        </div>
+                                    </h2>
+                                </div>
+                            </header>
+                        </div>
+                        <template if:true={isFoc}>
+                            <div class="">
+                                {labels.AgoraOrder_OrderValidationBomQuantitySpareParts}&nbsp;{quantityBomSpareParts}
+                            </div>
+                            <div class="">
+                                {labels.AgoraOrder_OrderValidationBomTotalPriceSpareParts}&nbsp;
+                                <lightning-formatted-number
+                                    value={totalPriceBom}
+                                    format-style="currency"
+                                    currency-code="EUR"
+                                ></lightning-formatted-number>
+                            </div>
+                            <div class="slds-m-top--large">
+                                {labels.AgoraOrder_OrderValidationGwQuantitySpareParts}&nbsp;{quantityGwSpareParts}
+                            </div>
+                            <div class="">
+                                {labels.AgoraOrder_OrderValidationGwTotalPriceSpareParts}&nbsp;
+                                <lightning-formatted-number
+                                    value={totalPriceGwSpareParts}
+                                    format-style="currency"
+                                    currency-code="EUR"
+                                ></lightning-formatted-number>
+                            </div>
+                            <div class="">
+                                {labels.AgoraOrder_OrderValidationGwQuantityProducts}&nbsp;{quantityGwProducts}
+                            </div>
+                        </template>
+                        <template if:true={isFex}>
+                            <div class="">{productInformation}</div>
+                            <div class="slds-m-top--large">
+                                {labels.AgoraOrder_OrderValidationGwQuantityProducts}&nbsp;{quantityGwProducts}
+                            </div>
+                        </template>
+                        <template if:true={isGoodwill}>
+                            <div class="">
+                                {labels.AgoraOrder_OrderValidationGwQuantityProducts}&nbsp;{quantityGwProducts}
+                            </div>
+                        </template>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning-button
+                            variant="neutral"
+                            label={labels.AgoraOrder_Cancel}
+                            title={labels.AgoraOrder_Cancel}
+                            onclick={closeModal}
+                        >
+                        </lightning-button>
+                        <lightning-button
+                            variant="brand"
+                            label={labels.AgoraOrder_Validate}
+                            title={labels.AgoraOrder_Validate}
+                            onclick={confirmSendOrder}
+                            class="slds-m-left_x-small"
+                        >
+                        </lightning-button>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </template>
+</template>

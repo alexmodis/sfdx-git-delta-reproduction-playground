@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOO_CPD_client_code__c</fullName>
+    <externalId>false</externalId>
+    <label>CPD client code</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>WOO_Commercial_organization__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>98001019</fullName>
+                <default>true</default>
+                <label>CKW End user Germany K101</label>
+            </value>
+            <value>
+                <fullName>98001020</fullName>
+                <default>false</default>
+                <label>CKW End user Austria K101</label>
+            </value>
+            <value>
+                <fullName>98001103</fullName>
+                <default>false</default>
+                <label>SDA End user Germany K101</label>
+            </value>
+            <value>
+                <fullName>98001120</fullName>
+                <default>false</default>
+                <label>SDA End user Austria K101</label>
+            </value>
+            <value>
+                <fullName>98001102</fullName>
+                <default>false</default>
+                <label>SDA Traders Germany K101</label>
+            </value>
+            <value>
+                <fullName>98001030</fullName>
+                <default>false</default>
+                <label>CKW End user inside Europe K109</label>
+            </value>
+            <value>
+                <fullName>98001111</fullName>
+                <default>false</default>
+                <label>SDA End user inside Europe K109</label>
+            </value>
+            <value>
+                <fullName>98001113</fullName>
+                <default>false</default>
+                <label>SDA Traders inside Europe K109</label>
+            </value>
+            <value>
+                <fullName>98001021</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>98001021</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>K101</controllingFieldValue>
+            <valueName>98001019</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>K101</controllingFieldValue>
+            <valueName>98001020</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>K101</controllingFieldValue>
+            <valueName>98001103</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>K101</controllingFieldValue>
+            <valueName>98001120</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>K101</controllingFieldValue>
+            <valueName>98001102</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>K109</controllingFieldValue>
+            <valueName>98001030</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>K109</controllingFieldValue>
+            <valueName>98001111</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>K109</controllingFieldValue>
+            <valueName>98001113</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "strictNullChecks": true
+  },
+  "checkJs": true,
+  "include": ["**/*", "**/*.d.ts"],
+  "paths": {
+    "c/*": ["*"]
+  },
+  "typeAcquisition": {
+    "include": ["jest"]
+  }
+}

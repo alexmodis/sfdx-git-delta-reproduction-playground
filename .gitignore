@@ -1,40 +1,34 @@
-# This file is used for Git repositories to specify intentionally untracked files that Git should ignore. 
-# If you are not using git, you can delete this file. For more information see: https://git-scm.com/docs/gitignore
-# For useful gitignore templates see: https://github.com/github/gitignore
+# exclude local config file used in force code
+\.forceCode/
+\.vscode/
+\.sfdx/
+force.json
+\.vim-force\.com/
 
-# Salesforce cache
-.sfdx/
-.localdevserver/
+**.code-workspace
 
-# LWC VSCode autocomplete
-**/lwc/jsconfig.json
+**/Recaptcha_settings.RegistrationPageV3.md
+**/Recaptcha_settings.RegistrationPage.md
+**/Recaptcha_settings.WebForm_v1.md
+**/SiteDomain.allclad.md
+**/SiteDomain.core.md
+**/SiteDomain.lagostina.md
+**/SiteDomain.silit.md
+**/SiteDomain.wmf.md
+src/resource-bundles/**
 
-# LWC Jest coverage reports
-coverage/
+# exclude local config file used in IntelliJ
+**/IlluminatedCloud/
+/SF-SalesforceGroupeSEB.iml
 
-# SOQL Query Results
-**/scripts/soql/query-results
+# for PMD
+.pmdCache
+pmd-bin*/
 
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Dependency directories
+# for prettier
 node_modules/
 
-# Eslint cache
-.eslintcache
+# for LWC?
+**/lwc/jsconfig.json
 
-# MacOS system files
-.DS_Store
-
-# Windows system files
-Thumbs.db
-ehthumbs.db
-[Dd]esktop.ini
-$RECYCLE.BIN/
-
-.vscode
+apexLog.csv

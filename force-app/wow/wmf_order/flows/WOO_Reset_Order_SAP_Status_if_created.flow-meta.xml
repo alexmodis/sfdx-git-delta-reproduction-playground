@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Reset_Order_SAP_Status</name>
+        <label>Reset Order SAP Status</label>
+        <locationX>143</locationX>
+        <locationY>815</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Order.WOO_SAP_status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Draft</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Order_0</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Bypass_flow</name>
+        <label>Bypass flow</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Get_Order</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>no Bypass</defaultConnectorLabel>
+        <rules>
+            <name>Bypass</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.Bypass_Workflows__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Bypass</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_parent_SAP_Order</name>
+        <label>Is parent SAP Order</label>
+        <locationX>473</locationX>
+        <locationY>575</locationY>
+        <defaultConnectorLabel>Parent is Free Orders OR Subsidiaries</defaultConnectorLabel>
+        <rules>
+            <name>Is_parent_SAP_Orders</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Order.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SAP_Orders</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Order_Simulated</targetReference>
+            </connector>
+            <label>Parent is SAP_Orders</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Order_Simulated</name>
+        <label>Order Simulated</label>
+        <locationX>275</locationX>
+        <locationY>695</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Simulated</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Order.WOO_SAP_status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Simulated with errors</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Order.WOO_SAP_status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Simulated OK</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Reset_Order_SAP_Status</targetReference>
+            </connector>
+            <label>Simulated</label>
+        </rules>
+    </decisions>
+    <description>Reset Order SAP Status if a new OrderLineItem is created while the order is simulated</description>
+    <interviewLabel>Reset Order SAP Status if created {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Reset Order SAP Status if created</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Order</name>
+        <label>Get Order</label>
+        <locationX>473</locationX>
+        <locationY>455</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_parent_SAP_Order</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WOO_WMF_Order__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>WOO_WMF_Orders__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Order_0</name>
+        <label>Update Order</label>
+        <locationX>143</locationX>
+        <locationY>935</locationY>
+        <inputReference>Get_Order</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Bypass_flow</targetReference>
+        </connector>
+        <object>WOO_WMF_Order_Line_Item__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

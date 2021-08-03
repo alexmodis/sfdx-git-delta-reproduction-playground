@@ -1,0 +1,1998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOO_Retailer__c</fullName>
+    <description>Copy of the field WOO_Case__r.Retailer__c.
+Details of the synchronization are in the triggers.</description>
+            <externalId>false</externalId>
+            <label>Retailer</label>
+            <required>false</required>
+            <trackFeedHistory>false</trackFeedHistory>
+            <trackHistory>false</trackHistory>
+            <trackTrending>false</trackTrending>
+            <type>Picklist</type>
+            <valueSet>
+                <controllingField>Product_Country__c</controllingField>
+                <restricted>true</restricted>
+                <valueSetName>Retailer</valueSetName>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>AMAZON</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <controllingFieldValue>AU</controllingFieldValue>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>BG</controllingFieldValue>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <controllingFieldValue>CA</controllingFieldValue>
+                    <controllingFieldValue>CZ</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <controllingFieldValue>DK</controllingFieldValue>
+                    <controllingFieldValue>NL</controllingFieldValue>
+                    <controllingFieldValue>NO</controllingFieldValue>
+                    <controllingFieldValue>ES</controllingFieldValue>
+                    <controllingFieldValue>FI</controllingFieldValue>
+                    <controllingFieldValue>PL</controllingFieldValue>
+                    <controllingFieldValue>PT</controllingFieldValue>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>RO</controllingFieldValue>
+                    <controllingFieldValue>RS</controllingFieldValue>
+                    <controllingFieldValue>RU</controllingFieldValue>
+                    <controllingFieldValue>SE</controllingFieldValue>
+                    <controllingFieldValue>SI</controllingFieldValue>
+                    <controllingFieldValue>SK</controllingFieldValue>
+                    <controllingFieldValue>HR</controllingFieldValue>
+                    <controllingFieldValue>HU</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <controllingFieldValue>UA</controllingFieldValue>
+                    <controllingFieldValue>US</controllingFieldValue>
+                    <controllingFieldValue>IT</controllingFieldValue>
+                    <valueName>GROUPE SEB WEBSITE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>T-fal オンラインショップ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>T-fal 直営店</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>そごう西武</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>アピデ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>イオンリテール</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>イズミ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>イズミヤ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>イタリア商事</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>イトーヨーカドー</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>エッセン</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>エディオン</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>オリンピック</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>カインズ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>ケーズデンキ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>ケーヨーＤＣＭ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>コジマ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>コストコ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>ジョイフル本田</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>ジョーシン</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>スギ薬局</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>ダイエー</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>ドンキホーテ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>ニトリ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>ノジマ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>ビックカメラ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>フジイ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>ミスターマックス</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>ヤマダ電機</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>三越伊勢丹</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>中山福</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>丸長</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>井筒屋</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>多慶屋</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>大丸松坂屋百貨店</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>天満屋</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>富士器業</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>小泉成器</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>小田急百貨店</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>島忠</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>東急ハンズ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>東急百貨店</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>東武百貨店</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>梶原産業</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>爽快ドラッグ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>菅野</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>菊屋</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>藤栄</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>西友</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>近鉄百貨店</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>遠藤商事</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>長島商事</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>阪急阪神百貨店</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>電響社</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>高島屋</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>JP</controllingFieldValue>
+                    <valueName>ＡＢＣクッキングスタジオ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>A.M.S. ELECTRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ALELEK NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ANFLO SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ARDENNE DIESEL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ARTEC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ATTENT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>AU STOCK</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BAETENS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BATIMONT SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BAUENS PASCAL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BAZELAIRE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BELLE CHOSE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BILLIET - VANLAERE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BIMA STOCK</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BIOBEST GROUP NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BIOPLANET</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BOL.COM B.V.</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BOSSAERT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BOUB&apos;S</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BOURGEOIS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BRICO ARDENNE SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BRICOBA SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BRICOBRAIN SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BRICOBURTON SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BRICOLIGHT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BRICOMAT SOMBREFFE SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BRICOMO SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BRICOTAM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BRICOURCELLES SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BRICOWAR SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BRINIVELLES SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>BRUYNS &amp; CHRISTIAENSEN BVBA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>CAMPING ZORRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>CARREFOUR</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>CARSAU-PERSIAU ELEKTRO EURONICS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>CASH PLUS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>CEBEO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>CENSINI</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>CENTRALE DEMA SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>CHEYNS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>COGNIAUX COLETTE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>COLRUYT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>COOK EN COOL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>COOLBLUE B.V.</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>CORA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>CORSWAREM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DEFITEC ELECTROS &amp; CUISINES</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DEJIMA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DE KRAKER NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DELHAIZE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DEMARET</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DEMA SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DE MEESTER NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DE MUNCK MENO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DEPIJPERE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DESCHACHT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DE SMEDT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DESOMERE-PLANCKE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DEWART SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DICAR BVBA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DISTRIBURT SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DISTRIDEL SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DOE HET ZELF CENTRUM N.V.</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DREAMLAND</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DROGISTERIJ BILSEN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DUBOIS BRICOLAGE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DUBOIS HABITAT SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DULLAERS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>DUPONT NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>E.G.G. SPY SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>E.P.</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELCADO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELECTRIC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELECTRO AV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELECTRO BRUYR EXCELLENT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELECTRO COMFORT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELECTRO DEPOT BELGIQUE SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELECTRO DISCOUNT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELECTRO HAMME</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELECTROSOLD BORINAGE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELECTRO VD.</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELEKTRO KEMPEN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELEKTRON</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELEKTRO NEVEN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELEKTRO SCHROEYEN NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELEKTRO VAN DEN BRANDT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELKA PIETERMAN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ELYE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ENGELS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ERGA SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ERO &amp; SOL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ESPACE BRICO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ETS ALEXANDRE ET CIE SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>EURONICS/SELEXION</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>EUROPOINT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>EXPERT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>FAMIFLORA NV / SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>FEYS ELECTRO COMFORT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>FILSFILS DINANT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>FIRMA VAN DER STOCKT NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>FLANDERS ELECTRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>FLASH ELEKTRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>FNAC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>FONQ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>FREE TIME CENTER</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>FRENI AG</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>GAVERZICHT MEUBELEN NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>GILLAGH SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>GILLON</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>GRAMMEN LX</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>GRETRYTAIL SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>HANDY HOME  -  MENO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>HAPPYLAND HERENTHOUT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>HARDWARE PIERARD SA - MENO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>HOBBYLAND</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>HOBBYRAMA VAN WIEMEERSCH</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>HOME &amp; COOK</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>HORTA BEVEREN BVBA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>HUBO BELGIE NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>HUIS COVELIERS - THEYS THEO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>IMETRA CONSULT SPRL CN/DO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>INNO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ITM BELGIQUE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>J.M.E.</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>JACOBY</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>JAGILEC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>JAM COOKING SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>JANSEN CONSTANCE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>JIFRAL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>KEUKENS MICHIELS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>KINDERPLANEET</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>KLEPPER DISTRIBUTION</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>KOOKFUN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>KOOKHUIS BVBA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>KREFEL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>KWIZIEN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>L&apos;AMI DU BRICOLEUR SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>LAMBERT ETS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>LANCKRIET</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>LAURENT SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>LEPLAT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>LOWYCK ELEKTRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>LYCOPS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>M.B. BRICOLAGE SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>M &amp; G FILSFILS SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MAFRANS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MAGASIN USINE NIVELLES</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MAISON LECOCQ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MAISON TELLIN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MAKART BOISSON SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>MAKRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MATCH</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MATIHOME SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MAURICE CRESPIN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MB ANDENNE SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>M-B-H SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MB NANDRIN SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MB SPA SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MEDIA MARKT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MENATAM SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MENATRONIC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MENOUQUIN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MERCKX - MENO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MICHEL QUINCAILLERIE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MONIKIDS NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MR BRICOLAGE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MULLER</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>MULTI BAZAR</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>N.T.C.</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>NEGRESCOLIVING BVBA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>NESPRESSO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>NESTLE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>NIEDERAU</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>NIEUWE GOUDEN SPADE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>NOFFELS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>OMEGA PHARMA BELGIUM NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>OSERIEUX PR AGENCY</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>PANACHE BVBA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>PAPIER</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>PEREN BREUER GMBH</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>PITTIE SA BRICO JARDIN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>PLASTICS WAUTERS S.A.</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>PLASTINOX BVBA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>PLEYSIER - STES</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>PRAILLET</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>PRIDEFI SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>PRODEMAT SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>PROFILEC ELECTRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>PROVA CN/DO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>QUINC. LAURENT SIRAUX</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>RADIOLEC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>RAVAGO PLASTICS NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>REXEL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>RIA&apos;S KOOKWINKEL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>RUTTEN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SAFTI-KADO NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SAINT BRICE SA  UNIGRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SAREM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>SATURN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SCHOOFS ELECTRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>S-ELECTRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SENGO SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SNUFFELMARKT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SODEBEL SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SOGEDEC SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SOGESMA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SPECIAL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>STOCK AMERICAIN BVBA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>STOCK ATH</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>STOCK DEPOT 224</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>STOCK FOSSES SA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SUNNY EUROPE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SUPERMARKT FRANCKEN NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SUPERPLASTIC S.A.</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>SUPRA CENTER VAN HAL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>TABLE AUX VERRES SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>TASSIGNON</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>TECNIBA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>TELARON SPRL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>TERWAGNE - MENO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>THE CAMPING STORE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>TIMMERMANS ELECTRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>TONDEUR ELEKTRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>TOP ELEKTRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>T PUNTJE OP DE I BVBA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>TRILEC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>UNIKAMP</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VAN DEN ABBEELE NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VAN DEN BERG</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VANDEN BORRE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VAN DER SCHUEREN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VANFRACHEM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VAN GASTEL NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VAN HAMME KRIS / ELKOMATIC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VAN HOYWEGHEN - DE RIDDER</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VANLERBERGHE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VANPUYVELDE-DEWILDE PVBA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VAN UYTSEL - MEZZANINO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VASTIAU GODEAU NV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VERMASSEN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VERMEERSCH - DECONINCK</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VERWAEST - MULTI-HOME</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VIAFOBEL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VLEUGELS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>VOLTIS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>WITTEMBERG &amp; FILS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BE</controllingFieldValue>
+                    <valueName>ZUANG DISTRIBUTION</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>EDEKA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>ELECTRONIC PARTNER</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>EURONICS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>FAMILA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>FEGO / SELGROS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>FRANZ KERSTIN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>GALERIA KAUFHOF</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>GLOBUS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>HAGEMEYER</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>HANDELSHOF</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>HOME SHOPPING EUROPE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>KAUFLAND</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>KODI</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>LIDL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>MARKTKAUF</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>MEDIAMARKT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>MEDIMAX</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>MEGA COMPANY</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>METRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>NECKERMANN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>OTTO VERSAND</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>RATIO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>REAL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>REWE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>TOOM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>UNIELEKTRO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>WM</controllingFieldValue>
+                    <controllingFieldValue>DE</controllingFieldValue>
+                    <valueName>UNIMET</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>A ANGELONI &amp; CIA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>ACOPIARA MOVEIS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>A MARE MANSA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>AMAZON SERV DE VAREJO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>ARCOM S/A</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>ARMAZEM MATEUS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>ARTHUR LUNDGREN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>B2W</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>BENCHIMOL IRMAO &amp; CIA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>BENOIT ELETRODOMESTICOS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>BRASIL C/T NACIONAL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>C &amp; C CASA E CONSTRUCAO - INTERNACI</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>CASAS FREIRE.COM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>CENCOSUD</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>CIA BRASILEIRA DISTR</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>CIA ZAFFARI COMERCIO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>CLAUDINO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>CREDIMOVEIS NOVOLAR-NACIONAL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>DOMESTILAR</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>ELETROZEMA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>ESTRELA DISTRIBUIDORA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>FAST SHOP</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>FERREIRA COSTA &amp; CIA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>FORMOSA SUPERMERCADO E MAGAZI - NAC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>GAZIN IND COM MOV</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>GRUPO FREITAS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>HAVAN TECIDOS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>IMPORTADORA TV LAR</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>IRMAOS MUFFATO E CIA LTDA - NACIONA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>J ALVES E OLIVEIRA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>JETMAX DISTRIBUIDORA EIRELI</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>J MAHFUZ</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>LEROY MERLIN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>LIDER SUPERM E MAGAZINE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>LOJAS AMERICANAS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>LOJAS BECKER</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>LOJAS CEM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>LOJAS COLOMBO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>LOJAS SIMONETTI ME</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>LOJAS SIPOLATTI</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>MAGAZINE LILIANI</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>MAGAZINE LUIZA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>MAIS PROXIMA S A</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>MAQUINA DE VENDAS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>MARTINS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>MASTER ELETRONICA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>MASTER ELETRONICA - INTERNACIONAL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>MOBILITA COM IND REPRES</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>MVX COMERCIO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>NARCISO ENXOVAIS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>N CLAUDINO &amp; CIA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>NOVO MUNDO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>outros</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>PINTOS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>RECLAMEAQUI</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>REDE NIVALMIX</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>REDE UNILAR</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>SOCIC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>SOLAR MAGAZINE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>SUPERLAR LOJAS DE DEPARTAMENTOS-NAC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>SUPERMERCADOS DB</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>TECH SHOP</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>TELE RIO ELETRO DOM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>UDBRAX</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>VIA VAREJO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>WAL MART</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>BR</controllingFieldValue>
+                    <valueName>WAL MART SAM S-NACIONAL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>AUCHAN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>BOULANGER</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>BOUTIQUE ACCESSOIRES</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>BUT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>CARREFOUR MARKET</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>CASINO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>CDISCOUNT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>CONFORAMA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>DARTY</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>E.LECLERC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>HOME AND COOK</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>INTERMARCHE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>L&apos;OREAL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>PIXMANIA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>RUE DU COMMERCE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>SHOWROOMPRIVE.COM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>SYSTEME U</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>UNILEVER</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>VENTEPRIVEE.COM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>VIP Sales</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>VIP Sales-BtoB</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>VIP Sales D to C</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>FR</controllingFieldValue>
+                    <valueName>VPC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>ALDI</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>ANOTHER COFEE.COM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>AO.COM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>ARGOS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>ARNOTTS LIMITED</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>ASDA</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>B&amp;M</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>CHARLIE SHIELS LTD</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>CO-OP</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>COSTCO</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>CURRYS DSG</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>DEBENHAMS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>DUNELM</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>DUNNES STORES LTD</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>Ebay</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>ELECTROBUY LTD</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>ELECTROTECH</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>FENWICK</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>FREEMANS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>GO-ELECTRICAL</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>GROUPON</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>HARTS OF STUR</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>HARVEY NORMAN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>HEATONS LTD</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>HOUSE OF FRASER</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>IDEAL SHOPPING DIRECT</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>J D WILLIAMS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>JOHN LEWIS PLC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>LAKELAND LIMITED</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>LIDL IRELAND</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>LITTLEWOODS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>MARKS AND SPENCER</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>MARLBORO TRUST (RETAIL)</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>MICHAEL BRISCOE LIMITED</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>MORLEYS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>MORRISON SUPERMARKETS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>MUSGRAVES</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>OTHERS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>POWER CITY LTD</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>ROBERT DYAS</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>SAINSBURYS PLC</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>SHOP DIRECT HOME SHOPPING LTD</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>STEAMER TRADING</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>TESCO IRELAND</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>TESCO STORES LTD</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>T J HUGHES</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>TK MAXX</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>UNKNOWN</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>VERY</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <valueName>WAITROSE</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>GB</controllingFieldValue>
+                    <controllingFieldValue>IE</controllingFieldValue>
+                    <valueName>WOODIES DIY LTD</valueName>
+                </valueSettings>
+                <valueSettings>
+                    <controllingFieldValue>RO</controllingFieldValue>
+                    <valueName>Altex</valueName>
+                </valueSettings>
+            </valueSet>
+        </CustomField>

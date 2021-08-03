@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOO_Commercial_organization__c</fullName>
+    <externalId>false</externalId>
+    <label>Commercial organization</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>K101</fullName>
+                <default>true</default>
+                <label>K101</label>
+            </value>
+            <value>
+                <fullName>K109</fullName>
+                <default>false</default>
+                <label>K109</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

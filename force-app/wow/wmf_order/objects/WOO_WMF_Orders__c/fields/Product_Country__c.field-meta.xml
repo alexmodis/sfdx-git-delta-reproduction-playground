@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Country__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Copy of the field WOO_Case__r.Product_Country__c.
+Used as the controlling value for WOO_Retailer__c which is itself a copy or WOO_Case__r.Retailer__c.
+Details of the synchronization are in the triggers.
+Also used for the look-up filter on WOO_Product__c</description>
+    <externalId>false</externalId>
+    <label>Retailer Country</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Country</valueSetName>
+    </valueSet>
+</CustomField>

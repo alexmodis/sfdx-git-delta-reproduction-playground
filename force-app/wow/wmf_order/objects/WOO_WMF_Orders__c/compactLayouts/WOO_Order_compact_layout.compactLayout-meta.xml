@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOO_Order_compact_layout</fullName>
+    <fields>Name</fields>
+    <fields>WOO_Order_Type__c</fields>
+    <fields>WOO_SAP_status__c</fields>
+    <fields>WOO_Agora_Submission_Datetime__c</fields>
+    <label>WOO Order compact layout</label>
+</CompactLayout>

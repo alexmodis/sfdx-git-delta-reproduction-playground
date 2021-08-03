@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CCC_Group__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Value expected : Case.Case_CCC__c
+At time of writing : &quot;BELGIUM&quot;, &quot;CANADA&quot;, &quot;DACH&quot;, &quot;DACH&quot;, &quot;FRANCE&quot;, &quot;IBERICA&quot;, &quot;IBERICA&quot;, &quot;JAPAN&quot;, &quot;TELUS&quot;, &quot;TELUS&quot;, &quot;TELUS&quot;, &quot;TELUS&quot;, &quot;TELUS&quot;, &quot;TELUS&quot;, &quot;TELUS&quot;, &quot;TELUS&quot;, &quot;TELUS&quot;, &quot;TELUS&quot;, &quot;NETHERLANDS&quot;, &quot;UK&quot;, &quot;USA&quot;, &quot;TELUS&quot;, &quot;Italy&quot;, &quot;DENMARK&quot;, &quot;FINLAND&quot;, &quot;NORWAY&quot;, &quot;SWEDEN&quot;, &quot;BRAZIL&quot;, &quot;WMF&quot;</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>CCC group corresponding to a CCC Country</inlineHelpText>
+    <label>CCC Group</label>
+    <length>255</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAP_Orders</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>WOO_Order_compact_layout</compactLayoutAssignment>
+    <label>Billable orders</label>
+    <picklistValues>
+        <picklist>WOO_CPD_client_code__c</picklist>
+        <values>
+            <fullName>98001019</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>98001020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>98001030</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>98001102</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>98001103</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>98001111</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>98001113</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>98001120</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>WOO_Commercial_organization__c</picklist>
+        <values>
+            <fullName>K101</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>K109</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>WOO_Order_Type__c</picklist>
+        <values>
+            <fullName>Finished products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spare part</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>WOO_SAP_status__c</picklist>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ready to be sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Simulated OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Simulated with errors</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
