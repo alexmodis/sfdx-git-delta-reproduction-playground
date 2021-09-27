@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alerte_refus_d_une_ch_ance</fullName>
+        <description>Alerte refus d’une échéance</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>PA_et_offres/Alerte_refus_d_une_ch_ance</template>
+    </alerts>
+    <alerts>
+        <fullName>BE_Email_notif_modif_echeance</fullName>
+        <description>Email_notif_modif_echeance</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>BE_Log_Planner</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>PA_et_offres/Email_notif_modif_echeance</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_notif_modif_echeance</fullName>
+        <description>Email_notif_modif_echeance</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Coordinateur_Logistique</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>PA_et_offres/Email_notif_modif_echeance</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Formatage_date_echeance</fullName>
+        <description>Formatage date echeance en mois année pour extraction mensuelle</description>
+        <field>mois_annee__c</field>
+        <formula>LPAD(TEXT(MONTH(Date_echeance__c)),2,&quot;0&quot;)&amp;TEXT(YEAR(Date_echeance__c))</formula>
+        <name>Formatage date echeance</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>unicite_echeance</fullName>
+        <description>unicite echeance</description>
+        <field>unicit_echeance__c</field>
+        <formula>Poste_d_offre__r.Id &amp;  &#39;_&#39; &amp; RecordType.Name &amp; &#39;_&#39; &amp;   TEXT(Date_echeance__c)</formula>
+        <name>unicite echeance</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>BE_informer_LOG_update_echeance</fullName>
+        <actions>
+            <name>BE_Email_notif_modif_echeance</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>((1 AND 2 AND 3 AND 7) OR (4 AND 5 AND 6)) AND 8</booleanFilter>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>Commerce_lightning user,Direction Commerciale_lightning user</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Echeance__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Commerce</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Echeance__c.Statut__c</field>
+            <operation>equals</operation>
+            <value>Traité</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>Service_Client_ADV_Lightning_User</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Echeance__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ADV</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Echeance__c.Statut__c</field>
+            <operation>equals</operation>
+            <value>Traité</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Poste_offre__c.co_wfl_t__c</field>
+            <operation>notEqual</operation>
+            <value>20,40</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.CountryCode</field>
+            <operation>equals</operation>
+            <value>BE</value>
+        </criteriaItems>
+        <description>informer les responsables  de la désactivation d&#39;un écheancier via un email</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Formatage date echeance</fullName>
+        <actions>
+            <name>Formatage_date_echeance</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.Bypass_Workflows__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Poste_offre__c.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Formatage de la date échéance en mois année pour l&#39;extraction mensuelle vers APO</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>informer_LOG_update_echeance</fullName>
+        <actions>
+            <name>Email_notif_modif_echeance</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>((1 AND 2 AND 3 AND 7) OR (4 AND 5 AND 6)) AND 8</booleanFilter>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>Commerce,Direction Commerciale</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Echeance__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Commerce</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Echeance__c.Statut__c</field>
+            <operation>equals</operation>
+            <value>Traité</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>Service client</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Echeance__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ADV</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Echeance__c.Statut__c</field>
+            <operation>equals</operation>
+            <value>Traité</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Poste_offre__c.co_wfl_t__c</field>
+            <operation>notEqual</operation>
+            <value>20,40</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.CountryCode</field>
+            <operation>equals</operation>
+            <value>FR</value>
+        </criteriaItems>
+        <description>informer les responsables  de la désactivation d&#39;un écheancier via un email</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>refus d%E2%80%99une échéance</fullName>
+        <actions>
+            <name>Alerte_refus_d_une_ch_ance</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>Echeance__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ADV,Commerce</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Echeance__c.Statut__c</field>
+            <operation>equals</operation>
+            <value>Refusé</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Echeance__c.Volume__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>Notification en cas de refus d’une échéance par le coordianateur logistique</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>unicité Echeance</fullName>
+        <actions>
+            <name>unicite_echeance</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.Bypass_Workflows__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Poste_offre__c.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>unicité de l&#39;échéance</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>
