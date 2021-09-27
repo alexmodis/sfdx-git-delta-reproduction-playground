@@ -33,6 +33,16 @@
         <template>PA_et_offres/Email_notif_modif_echeance</template>
     </alerts>
     <fieldUpdates>
+        <fullName>BE_statut_echeance</fullName>
+        <field>Statut__c</field>
+        <literalValue>En attente</literalValue>
+        <name>statut echeance</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Formatage_date_echeance</fullName>
         <description>Formatage date echeance en mois année pour extraction mensuelle</description>
         <field>mois_annee__c</field>
@@ -43,10 +53,20 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>statut_echeance</fullName>
+        <field>Statut__c</field>
+        <literalValue>En attente</literalValue>
+        <name>statut echeance</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>unicite_echeance</fullName>
         <description>unicite echeance</description>
         <field>unicit_echeance__c</field>
-        <formula>Poste_d_offre__r.Id &amp;  &#39;_&#39; &amp; RecordType.Name &amp; &#39;_&#39; &amp;   TEXT(Date_echeance__c)</formula>
+        <formula>Poste_d_offre__r.Id &amp;  &apos;_&apos; &amp; RecordType.Name &amp; &apos;_&apos; &amp;   TEXT(Date_echeance__c)</formula>
         <name>unicite echeance</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
@@ -57,6 +77,10 @@
         <actions>
             <name>BE_Email_notif_modif_echeance</name>
             <type>Alert</type>
+        </actions>
+        <actions>
+            <name>BE_statut_echeance</name>
+            <type>FieldUpdate</type>
         </actions>
         <active>false</active>
         <booleanFilter>((1 AND 2 AND 3 AND 7) OR (4 AND 5 AND 6)) AND 8</booleanFilter>
@@ -100,7 +124,7 @@
             <operation>equals</operation>
             <value>BE</value>
         </criteriaItems>
-        <description>informer les responsables  de la désactivation d&#39;un écheancier via un email</description>
+        <description>informer les responsables  de la désactivation d&apos;un écheancier via un email</description>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -119,7 +143,7 @@
             <field>Poste_offre__c.Name</field>
             <operation>notEqual</operation>
         </criteriaItems>
-        <description>Formatage de la date échéance en mois année pour l&#39;extraction mensuelle vers APO</description>
+        <description>Formatage de la date échéance en mois année pour l&apos;extraction mensuelle vers APO</description>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -128,8 +152,11 @@
             <name>Email_notif_modif_echeance</name>
             <type>Alert</type>
         </actions>
+        <actions>
+            <name>statut_echeance</name>
+            <type>FieldUpdate</type>
+        </actions>
         <active>true</active>
-        <booleanFilter>((1 AND 2 AND 3 AND 7) OR (4 AND 5 AND 6)) AND 8</booleanFilter>
         <criteriaItems>
             <field>User.ProfileId</field>
             <operation>equals</operation>
@@ -146,21 +173,6 @@
             <value>Traité</value>
         </criteriaItems>
         <criteriaItems>
-            <field>User.ProfileId</field>
-            <operation>equals</operation>
-            <value>Service client</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Echeance__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>ADV</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Echeance__c.Statut__c</field>
-            <operation>equals</operation>
-            <value>Traité</value>
-        </criteriaItems>
-        <criteriaItems>
             <field>Poste_offre__c.co_wfl_t__c</field>
             <operation>notEqual</operation>
             <value>20,40</value>
@@ -170,7 +182,7 @@
             <operation>equals</operation>
             <value>FR</value>
         </criteriaItems>
-        <description>informer les responsables  de la désactivation d&#39;un écheancier via un email</description>
+        <description>informer les responsables  de la désactivation d&apos;un écheancier via un email</description>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -215,7 +227,7 @@
             <field>Poste_offre__c.Name</field>
             <operation>notEqual</operation>
         </criteriaItems>
-        <description>unicité de l&#39;échéance</description>
+        <description>unicité de l&apos;échéance</description>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>
